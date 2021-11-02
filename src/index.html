@@ -1,0 +1,51 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Algorithm Hunter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Algorithm Hunter Big O Notation calculator!</h1>
+    <p class="paragraph">Type your code below and select the corresponding language from the dropdown it will calculate the Big O time complexity</p>
+    <p></p>
+    <div>
+        <label for="languageOption">Choose language </label>
+        <select id="languageOption">
+            <option>Java</option>
+            <option>C</option>
+            <option>C++</option>
+            <option>Python</option>
+            <option>C#</option>
+            <option>Javascript</option>
+            <option>Swift</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="codeInput"></label>
+    </div>
+    <div>
+        <textarea class="textarea" spellcheck="false" id="codeInput" rows=20 cols="50" placeholder="Copy the codes from ReadME file to get started"></textarea>
+    </div>
+    <a href="../ReadME.md">Read ME for your reference: HTML does not render MD extension, so remove all #s</a>
+    <div>
+
+    </div>
+    <div>
+        <button id="getBigOBtn">Evaluate my code</button>
+
+        <h2>Result:
+            <h2 id="resultShow"></h2>
+        </h2>
+
+    </div>
+
+
+    <footer>Disclaimer: This tool can only calculate the for loop statements for your reference.
+        While it may be illogical to advance this code any further, there you may make small modifications.</footer>
+
+    <script src="evaluator.js"></script>
+    <script src="index.js"></script>
+</body>
+
