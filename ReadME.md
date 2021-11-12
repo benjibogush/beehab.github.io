@@ -2,6 +2,13 @@
 > but not limited to the entire list of time complexities. 
 > Given time, this may be developed further to account for more input types.
 >  However it is not recommended since it gets very complicated by given value over time.
+
+## Constant time complexity example
+
+### if(N<10){
+###    println()
+### }
+
 ## Example 1: Basic O(N) notation
 
 ### for(int i = 0; i < N; i++) {
@@ -47,18 +54,23 @@
 ### Parse what in Python:
 
     This will be a very complex to implement.
-    1. Its going to use for {var} in {list} every time. However, we'd need to account for the range input
-    2. range(end, start, skip) 
+    -- Its going to use for {var} in {list} every time. However,  range input should be accounted for.
+    -- range(end, start, skip) 
 
 ### Parse what in Java:
-    1. It could use for(;;) notation or for(x : list) notation
-        1a. Or it could be while notation...lol. This will be such a bitch to look at.
-        
-    2. If the last column of the for(;;) notation is ++ or -- or += or -=, we have O(N)
-    3. If the last column of the for(;;) notation is /= or *=, we have O(logN)
-    4. If the first column is based on (N.length - a value) -> This is going to be a fixed value. So this is O(1)
-    5. Determining merge sort or quicksort algorithms wouldn't be very easy...might need to focus on this last
-    6. If we have an infinite loop, tell the user.
+    -- It could use for(;;) notation or for(x : list) notation or it can be while notation, nontheless, not worth it do apply.
+    -- If the last column of the for(;;) notation is ++ or -- or += or -=, we have O(N)
+    -- If the last column of the for(;;) notation is /= or *=, we have O(logN)
+    -- If the first column is based on (N.length - a value) -> This is going to be a fixed value. So this is O(1)
+    -- Determining merge sort or quicksort algorithms wouldn't be very easy...time needed to focus on this last part
+    -- Finally if there is an infinite loop, tell the user.
 
+## Edge use case example:
+### There are many cases we can account for and there is tons of more use cases we may not be able to code given limited time.
 
+### while(N<1000 && N=N*N){
+###     for(int i=0; i<N; i=*2){
+###            println()
+###     }
+### }
 
