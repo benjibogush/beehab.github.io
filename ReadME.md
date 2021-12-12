@@ -1,8 +1,10 @@
->>>> Here you may find basic algorithms that accounted in Big O notation
-> but not limited to the entire list of time complexities. 
-> Given time, this may be developed further to account for more input types.
->  However it is not recommended since it gets very complicated by given value over time.
+>>>> Algorithm Hunter works by partitioning parts of for loop components in order to classify the Big O value.
+> Returns results as O(1), O(N) and so on.
+> Access the Algorithm Hunter by adding /src right after io endpoint.
+> For example, https://beehab.github.io/src/ opens the calculator. 
+> In addition, https://beehab.github.io/src/index.html also opens calculator.
 
+> Use cases are given below. 
 ## Constant time complexity example
 
 ### if(N<10){
@@ -51,9 +53,7 @@
 ###    }
 ### }
 
-### Parse what in Python:
-
-    This will be a very complex to implement.
+### Parse what in Python(hard to achieve at this point, given time, it can be done):
     -- Its going to use for {var} in {list} every time. However,  range input should be accounted for.
     -- range(end, start, skip) 
 
