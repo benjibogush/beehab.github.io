@@ -1,7 +1,7 @@
 
 
 
-// clear the text area if the language is changed
+// reset the text area if the language is changed
 const dropdown = document.getElementById("languageOption");
 dropdown.onchange = function() {
     let codeInput = document.getElementById("codeInput");

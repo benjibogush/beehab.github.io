@@ -322,14 +322,13 @@ function getBigONotation(forStatements) {
     bigOList.push(bigOString);
 
     if (hasError) {
-        return "An error has occurred. Make sure the syntax of your " +
-            "code is correct or that it's logic doesn't create an infinite loop.";
+        return "An error has occurred. Check the syntax of your code!";
     }
 
     if (isLazy) {
-        return "Congrats, you found a use case that I was really too lazy to implement. " +
-            "It's not that it's IMPOSSIBLE to do, but there are so many insane edge cases to this " +
-            "that I decided it wasn't worth the hassle. Please, for the love of God, use a simpler for or while loop."
+        return "Congrats, you found a use case. " +
+            "Please create a PR if you like to contribute for given use case. " +
+            "Thank you for doing that."
     }
 
     bigORes = getBiggestBigOString(bigOList);
@@ -338,3 +337,4 @@ function getBigONotation(forStatements) {
     return finalResult;
 
 }
+
